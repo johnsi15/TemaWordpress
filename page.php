@@ -1,0 +1,34 @@
+<?php get_header(); ?>
+	<section class="imagen_encabezado">
+		<?php if(have_posts()): while (have_posts()): the_post(); ?>
+			<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'slider_thumbs' ); } ?>
+		<?php endwhile; else: ?>
+			<h1>No hay articulos.</h1>
+		<?php endif; ?>
+	</section>
+	<section class="articulos container">
+		<article class="articulos_principales">
+			<article class="row">
+				<div class="col-md-11 well well-lg">
+				<?php if(have_posts()): the_post(); ?>
+						<div id="contacto">
+							<h1><?php the_title();?></h1>
+							<hr>
+							<p><?php the_content();?></p>
+						</div>
+						<hr>
+				<?php else:?>
+					<h1>No hay articulos.</h1>
+				<?php endif?>
+					<!-- <section class="mas_articulos">
+						<h2>Mas Articulos</h2>
+					</section> -->
+					<?php //get_sidebar(); ?> <!-- Mas Articulos para ver-->
+				</div>
+			</article>
+		</article>
+	</section>
+
+
+
+<?php get_footer(); ?>
