@@ -81,6 +81,15 @@ footer{
 /* body { padding-top: 70px; } */
 
 /* logos */
+.logo{
+    padding: 0!important;
+    margin-right: 20px;
+}
+
+.logo:hover{
+    opacity: .9;
+}
+
 .espacio_logo{
     padding-top: 120px;
 }

@@ -6,7 +6,12 @@
         <title><?php bloginfo(' name'); wp_title('|',true,RIGHT); ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url')?>/img/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="<?php bloginfo('template_url')?>/img/icon/manifest.json">
+        <link rel="mask-icon" href="<?php bloginfo('template_url')?>/img/icon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/normalize.min.css">
         <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/main.css">
@@ -27,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/"><?php bloginfo('name');?></a>
+              <a class="navbar-brand logo" href="/"><img src="<?php bloginfo('template_url')?>/img/logo.png" width="180"><?php //bloginfo('name');?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

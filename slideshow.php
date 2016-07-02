@@ -70,7 +70,7 @@
 
             <?php
 
-              $args = array(
+              /*$args = array(
                   'show_option_all'    => '',
                   'show_option_none'   => '',
                   'option_none_value'  => '-1',
@@ -92,11 +92,11 @@
                   'taxonomy'           => 'category',
                   'hide_if_empty'      => false,
                   'value_field'      => 'term_id',  
-                ); 
+                ); */
 
             ?>
 
-            <section class="container buscador">
+           <!--  <section class="container buscador">
                 <article class="row">
                     <div class="col-xs-12 hidden-sm hidden-md hidden-lg well">
                         <form method="get" id="searchform" action="<?php bloginfo('home'); ?>" class="form-inline">
@@ -110,4 +110,4 @@
                         </form>
                     </div>
                 </article>
-            </section>
+            </section> -->
