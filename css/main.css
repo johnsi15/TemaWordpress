@@ -200,12 +200,8 @@ footer{
     #buscador_menu{
         display: none;
     }
-
     .widgets_laterales{
-        float: none;
-    }
-    .widgets{
-        display: none!important;
+        display: none;
     }
     .articulos{
         margin-left: 0%!important;
