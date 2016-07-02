@@ -205,7 +205,7 @@ footer{
         float: none;
     }
     .widgets{
-        display: none;
+        display: none!important;
     }
     .articulos{
         margin-left: 0%!important;
