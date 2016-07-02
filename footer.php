@@ -15,7 +15,7 @@
                 </article>
                 <article class="row redes_wp">
                     <div class="col-xs-12">
-                       <span class="icon-whatsapp redes_sociales w"> 3102545861</span>
+                       <span class="icon-whatsapp redes_sociales w"> 3202492861</span>
                     </div>
                 </article>
                 <article class="row pie_logos">

@@ -204,6 +204,9 @@ footer{
     .widgets_laterales{
         float: none;
     }
+    .articulos{
+        margin-left: 0%!important;
+    }
 }
 
 
