@@ -64,7 +64,7 @@
                   'hide_empty'         => 1, 
                   'child_of'           => 0,
                   'exclude'            => '',
-                  'include'            => '',
+                  'include'            => '3,7',
                   'echo'               => 1,
                   'selected'           => 0,
                   'hierarchical'       => 0, 
