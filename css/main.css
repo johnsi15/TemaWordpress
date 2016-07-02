@@ -62,12 +62,12 @@ img#wpstats {
 
 .articulos{
     margin-top: 50px;
-    margin-left: 1%!important;
+    margin-left: 5%!important;
     overflow: hidden;
 }
 
 .articulo{
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 footer{
@@ -154,7 +154,7 @@ footer{
     float: right;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 60px;
+    margin-top: 20px;
     width: 25%;
 }
 
