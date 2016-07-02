@@ -77,13 +77,12 @@
                   'hide_if_empty'      => false,
                   'value_field'      => 'term_id',  
                 ); 
-
              ?>
               <form method="get" id="searchform" action="<?php bloginfo('home'); ?>" class="navbar-form navbar-left" role="search">
                   <div class="form-group col-6-md">
                   <input type="text" class="form-control" placeholder="Ej: Aveo" autofocus name="category" id="s" />
                   <input type="hidden" name="cat" value="<?php echo $id_categoria; ?>" />            
-                  <?php wp_dropdown_categories($args); ?>
+                  <?php print wp_dropdown_categories($args); ?>
                   </div>
                 <button type="submit" class="btn btn-default">Buscar</button>
               </form>
