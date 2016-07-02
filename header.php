@@ -64,7 +64,7 @@
                   'hide_empty'         => 1, 
                   'child_of'           => 0,
                   'exclude'            => '',
-                  'include'            => '3,7',
+                  'include'            => '',
                   'echo'               => 1,
                   'selected'           => 0,
                   'hierarchical'       => 0, 
@@ -82,7 +82,7 @@
                   <div class="form-group col-6-md">
                   <input type="text" class="form-control" placeholder="Ej: Aveo" autofocus name="category" id="s" />
                   <input type="hidden" name="cat" value="<?php echo $id_categoria; ?>" />            
-                  <?php print wp_dropdown_categories($args); ?>
+                  <?php wp_dropdown_categories($args); ?>
                   </div>
                 <button type="submit" class="btn btn-default">Buscar</button>
               </form>
