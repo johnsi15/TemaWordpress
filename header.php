@@ -18,8 +18,6 @@
         <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
         <link href='https://fonts.googleapis.com/css?family=Passion+One|Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
-
-        <script src="<?php bloginfo('template_url')?>/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-fixed-top">

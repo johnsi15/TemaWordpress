@@ -67,7 +67,7 @@
 
             </section>
         </footer>
-
+        <script src="<?php bloginfo('template_url')?>/js/vendor/modernizr-2.8.3.min.js"></script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
         <script src="<?php bloginfo('template_url')?>/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="<?php bloginfo('template_url')?>/js/plugins.js"></script>
