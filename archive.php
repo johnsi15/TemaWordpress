@@ -15,7 +15,7 @@
 			                'show_count' => false,
 			                'hierarchical' => true,
 			                'separator' => ' | ',
-			                'exclude' => '18,1,8',
+			                'exclude' => '10,1',
 			                'taxonomy' => 'category',
 			            );
 			            ?><article class="row"><ul class="nav nav-pills nav-stacked"><?php wp_list_categories($args); ?></ul></article> <?php

@@ -9,7 +9,7 @@
 							<a href="<?php the_permalink();?>">
 							</a>
 						</div> -->
-						<div class="articulo">
+						<div class="articulo art">
 							<h1><a href="<?php the_permalink();?>"><?php the_title();?></a></h1>
 							<div><strong class="fecha"><?php print get_the_date();?> - <span class="categorias"><?php the_category();?></span></strong></div>
 							<hr>

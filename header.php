@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php bloginfo(' name'); wp_title('|',true,RIGHT); ?></title>
         <meta name="description" content="Asesorar en la Venta de vehiculos Nuevos y Usados todas las marcas, Financiamiento por medio de Banco servicio responsable agil honestidad.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="John Serrano">
+        <meta name="generator" content="Wordpress">
+        <meta name="robots" content="index, follow">
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url')?>/img/icono/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-16x16.png" sizes="16x16">
