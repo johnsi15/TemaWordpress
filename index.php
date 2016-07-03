@@ -52,9 +52,6 @@
         </section>
       <section class="container widgets">
             <article class="row">
-                <div class="col-sm-4   hidden-md hidden-lg widget well">                    
-                    <script src="http://www.dolar-colombia.com/widget.js?t=3"></script>
-                </div>
                 <div class="col-sm-7  col-sm-offset-1 hidden-md hidden-lg widget well"> 
                       <div class="fb-page" data-height-cover="false" 
                       data-href="https://www.facebook.com/asesorvncucuta/"
