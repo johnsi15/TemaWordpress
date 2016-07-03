@@ -51,7 +51,7 @@
             </nav>
         </section>
       <section class="container widgets">
-            <article class="row">
+            <!-- <article class="row">
                 <div class="col-sm-7  col-sm-offset-1 hidden-md hidden-lg widget well"> 
                       <div class="fb-page" data-height-cover="false" 
                       data-href="https://www.facebook.com/asesorvncucuta/"
@@ -61,7 +61,7 @@
                       data-show-posts="false">
                       </div>
                 </div>
-            </article>
+            </article> -->
         </section>
 
 <?php get_footer(); ?>
