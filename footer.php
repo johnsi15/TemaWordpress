@@ -14,8 +14,14 @@
                     </div>                    
                 </article>
                 <article class="row redes_wp">
-                    <div class="col-xs-12">
+                    <div class="col-xs-3">
                        <span class="icon-whatsapp redes_sociales w"> 3202492861</span>
+                    </div>
+                    <div class="col-xs-6">
+                       <span class="icon-mail2 redes_sociales"> asesorvncucuta@gmail.com</span>
+                    </div>
+                    <div class="col-xs-3">
+                       <span class="redes_sociales"> Cel:3202492861</span>
                     </div>
                 </article>
                 <article class="row pie_logos">
@@ -145,14 +151,15 @@
                 });
             })(jQuery);
         </script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>-->
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-70262910-2', 'auto');
+          ga('send', 'pageview');
+        </script>
     </body>
 </html>
