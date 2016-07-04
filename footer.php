@@ -14,15 +14,17 @@
                     </div>                    
                 </article>
                 <article class="row redes_wp">
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
                        <span class="icon-whatsapp redes_sociales w"> 3202492861</span>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="hidden-xs col-sm-12 col-md-6">
                        <span class="icon-mail2 redes_sociales"> asesorvncucuta@gmail.com</span>
                     </div>
-                    <div class="col-xs-3">
-                       <span class="redes_sociales"> Cel:3202492861</span>
-                    </div>
+                </article>
+                <article class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                       <span class="redes_sociales"> Cel: 3202492861</span>
+                  </div>
                 </article>
                 <article class="row pie_logos">
                     <div class="col-xs-4 col-sm-3 col-md-1">
