@@ -23,7 +23,7 @@
                 </article>
                 <article class="row">
                   <div class="col-xs-6 col-sm-6 col-md-6">
-                       <span class="redes_sociales"> Cel: 3202492861</span>
+                       <span class="redes_sociales"> Cel: 3003482805</span>
                   </div>
                 </article>
                 <article class="row pie_logos">
