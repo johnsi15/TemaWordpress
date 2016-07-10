@@ -45,7 +45,7 @@
                                <div class="item">
                                   <a href="<?php the_permalink();?>"><?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'slider_thumbs' ); } ?></a>
                                   <div class="carousel-caption">
-                                    <h1><?php the_title();?></h1>
+                                    <h1><?php //the_title();?></h1>
                                     <p><?php the_excerpt();?></p>
                                   </div>
                                </div>
