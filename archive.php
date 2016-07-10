@@ -18,9 +18,7 @@
 			                'exclude' => '10,1',
 			                'taxonomy' => 'category',
 			            );
-			            ?><article class="row"><ul class="nav nav-pills nav-stacked"><?php wp_list_categories($args); ?></ul></article> <?php
-			        ?>
-
+			            ?><article class="row"><ul class="nav nav-pills nav-stacked"><?php wp_list_categories($args); ?></ul></article> 
 			    </div>
 			</div>
 		</article>
