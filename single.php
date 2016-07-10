@@ -37,7 +37,7 @@
 					<section class="articulos container-fluid">
 						<article class="articulos_principales">
 							<?php $b=0; query_posts("paged=$paged");	?>
-							<?php $a = 0; if(have_posts()): while (have_posts()): the_post(); ?>
+							<?php $a = 0; if(have_posts()): query_posts($query_string .'&cat=-10'); while (have_posts()): the_post(); ?>
 								<?php 
 								$a++;
 								if($a==1){
