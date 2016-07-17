@@ -1,12 +1,12 @@
 <form role="search" method="get" id="searchform" class="navbar-form navbar-left" action="<?php echo home_url( '/' ); ?>">
 
 	<div class="form-group col-6-md">
-		<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+		<input type="search" class="search-field" placeholder="Ej: Kia" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
 	</div>
-<select name="category_name">
-            <option value="nuevos">Nuevos</option>
-            <option value="usados">Usados</option>
-        </select>
+	<select class="form-control" name="category_name">
+        <option value="nuevos">Nuevos</option>
+        <option value="usados">Usados</option>
+    </select>
 	<input type="submit" class="btn btn-default search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
 </form>
 
