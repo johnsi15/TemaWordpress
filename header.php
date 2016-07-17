@@ -101,38 +101,39 @@
                'walker' => new My_Walker_Nav_Menu()
                )); 
 
-                $args = array(
-                  'show_option_all'    => '',
-                  'show_option_none'   => '',
-                  'option_none_value'  => '-1',
-                  'orderby'            => 'ID', 
-                  'order'              => 'ASC',
-                  'show_count'         => 0,
-                  'hide_empty'         => 1, 
-                  'child_of'           => 0,
-                  'exclude'            => '',
-                  'include'            => '3,7',
-                  'echo'               => 1,
-                  'selected'           => 0,
-                  'hierarchical'       => 0, 
-                  'name'               => 'cat',
-                  'id'                 => '',
-                  'class'              => 'postform',
-                  'depth'              => 0,
-                  'tab_index'          => 0,
-                  'taxonomy'           => 'category',
-                  'hide_if_empty'      => false,
-                  'value_field'      => 'term_id',  
-                ); 
+                // $args = array(
+                //   'show_option_all'    => '',
+                //   'show_option_none'   => '',
+                //   'option_none_value'  => '-1',
+                //   'orderby'            => 'ID', 
+                //   'order'              => 'ASC',
+                //   'show_count'         => 0,
+                //   'hide_empty'         => 1, 
+                //   'child_of'           => 0,
+                //   'exclude'            => '',
+                //   'include'            => '3,7',
+                //   'echo'               => 1,
+                //   'selected'           => 0,
+                //   'hierarchical'       => 0, 
+                //   'name'               => 'cat',
+                //   'id'                 => '',
+                //   'class'              => 'postform',
+                //   'depth'              => 0,
+                //   'tab_index'          => 0,
+                //   'taxonomy'           => 'category',
+                //   'hide_if_empty'      => false,
+                //   'value_field'      => 'term_id',  
+                // ); 
              ?>
-              <form method="get" id="searchform" action="<?php bloginfo('home'); ?>" class="navbar-form navbar-left" role="search">
-                  <div class="form-group col-6-md">
-                  <input type="text" class="form-control" placeholder="Ej: Aveo" autofocus name="/" id="s" />
-                  <input type="hidden" name="cat" value="<?php echo get_query_var('cat'); ?>" />            
-                  <?php wp_dropdown_categories($args); ?>
-                  </div>
-                <button type="submit" class="btn btn-default">Buscar</button>
-              </form>
+             <?php get_search_form(); ?>
+             <!--  <form method="get" id="searchform" action="<?php bloginfo('home'); ?>" class="navbar-form navbar-left" role="search">
+                 <div class="form-group col-6-md">
+                 <input type="text" class="form-control" placeholder="Ej: Aveo" autofocus name="/" id="s" />
+                 <input type="hidden" name="cat" value="<?php echo get_query_var('cat'); ?>" />            
+                 <?php wp_dropdown_categories($args); ?>
+                 </div>
+               <button type="submit" class="btn btn-default">Buscar</button>
+             </form> -->
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
