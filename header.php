@@ -44,7 +44,7 @@
           $out_excerpt = str_replace(array("\r\n", "\r", "\n"), "", get_the_excerpt());
           echo apply_filters('the_excerpt_rss', $out_excerpt);
           endwhile;   ?>"/>
-        <meta name="twitter:image:src" content="<?php if ( $thumb[0] != null ) { echo $thumb; } ?>">
+        <meta name="twitter:image:src" content="<?php if ( $thumb[0] !== null ) { echo $thumb; } ?>">
         <!-- Fin compartir Twitter -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url')?>/img/icono/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-32x32.png" sizes="32x32">
