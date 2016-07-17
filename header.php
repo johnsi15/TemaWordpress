@@ -6,9 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><?php bloginfo(' name'); wp_title('|',true,RIGHT); ?></title>
         <meta name="description" content="Asesorar en la Venta de vehiculos Nuevos y Usados todas las marcas, Financiamiento por medio de Banco servicio responsable agil honestidad.">
-        <meta name="author" content="John Serrano">
+        <meta name="author" content="Alvaro Serrano">
         <meta name="generator" content="Wordpress">
         <meta name="robots" content="index, follow">
+        <!-- Inicio compartir en FB  -->
+        <?php
+          $thumb = get_post_meta($post->ID,'_thumbnail_id',false);
+          $thumb = wp_get_attachment_image_src($thumb[0], false);
+          $thumb = $thumb[0];
+         
+          ?>         
+        <?php if(is_single() || is_page()) { ?>
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="<?php single_post_title(''); ?>" />
+          <meta property="og:description" content="<?php 
+          while(have_posts()):the_post();
+          $out_excerpt = str_replace(array("\r\n", "\r", "\n"), "", get_the_excerpt());
+          echo apply_filters('the_excerpt_rss', $out_excerpt);
+          endwhile;   ?>" />
+          <meta property="og:url" content="<?php the_permalink(); ?>"/>
+          <meta property="og:image" content="<?php if ( $thumb[0] != null ) { echo $thumb; } ?>" />
+        <?php  } else { ?>
+          <meta property="og:type" content="article" />
+           <meta property="og:title" content="<?php bloginfo('name'); ?>" />
+          <meta property="og:url" content="<?php bloginfo('url'); ?>"/>
+          <meta property="og:description" content="<?php bloginfo('description'); ?>" />
+            <meta property="og:image" content="<?php  if ( $thumb[0] == null ) { echo $default_img; } else { echo $thumb; } ?>" />
+        <?php  }  ?>
+        <!-- Fin compartir en FB -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url')?>/img/icono/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-16x16.png" sizes="16x16">
