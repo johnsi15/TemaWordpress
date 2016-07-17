@@ -35,6 +35,7 @@
         <?php  }  ?>
         <!-- Fin compartir en FB -->
         <!-- Compartir Twitter -->
+        <?php if(is_single() || is_page()) { ?>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@asesorvncucuta"/>
         <meta name="twitter:creator" content="@alvaroserrano"/>
@@ -45,6 +46,14 @@
           echo apply_filters('the_excerpt_rss', $out_excerpt);
           endwhile;   ?>"/>
         <meta name="twitter:image:src" content="<?php if ( $thumb[0] !== null ) { echo $thumb; } ?>">
+        <?php  } else { ?>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@asesorvncucuta"/>
+        <meta name="twitter:creator" content="@alvaroserrano"/>
+        <meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
+        <meta name="twitter:description"content="<?php bloginfo('description'); ?>" />
+        <meta name="twitter:image:src" content="<?php  if ( $thumb[0] !== null ) { echo $thumb;  } ?>" />
+        <?php  }  ?>
         <!-- Fin compartir Twitter -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url')?>/img/icono/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-32x32.png" sizes="32x32">
