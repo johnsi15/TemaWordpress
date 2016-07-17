@@ -38,7 +38,7 @@
         <?php if(is_single() || is_page()) { ?>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@asesorvncucuta"/>
-        <meta name="twitter:creator" content="@alvaroserrano"/>
+        <meta name="twitter:creator" content="@Jandrey15"/>
         <meta name="twitter:title" content="<?php single_post_title(''); ?>">
         <meta name="twitter:description" content="<?php 
           while(have_posts()):the_post();
@@ -49,7 +49,7 @@
         <?php  } else { ?>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@asesorvncucuta"/>
-        <meta name="twitter:creator" content="@alvaroserrano"/>
+        <meta name="twitter:creator" content="@Jandrey15"/>
         <meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
         <meta name="twitter:description"content="<?php bloginfo('description'); ?>" />
         <meta name="twitter:image:src" content="<?php  if ( $thumb[0] !== null ) { echo $thumb;  } ?>" />
