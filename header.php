@@ -31,9 +31,21 @@
            <meta property="og:title" content="<?php bloginfo('name'); ?>" />
           <meta property="og:url" content="<?php bloginfo('url'); ?>"/>
           <meta property="og:description" content="<?php bloginfo('description'); ?>" />
-            <meta property="og:image" content="<?php  if ( $thumb[0] == null ) { echo $default_img; } else { echo $thumb; } ?>" />
+            <meta property="og:image" content="<?php  if ( $thumb[0] !== null ) { echo $thumb;  } ?>" />
         <?php  }  ?>
         <!-- Fin compartir en FB -->
+        <!-- Compartir Twitter -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@asesorvncucuta"/>
+        <meta name="twitter:creator" content="@alvaroserrano"/>
+        <meta name="twitter:title" content="<?php single_post_title(''); ?>">
+        <meta name="twitter:description" content="<?php 
+          while(have_posts()):the_post();
+          $out_excerpt = str_replace(array("\r\n", "\r", "\n"), "", get_the_excerpt());
+          echo apply_filters('the_excerpt_rss', $out_excerpt);
+          endwhile;   ?>"/>
+        <meta name="twitter:image:src" content="<?php if ( $thumb[0] != null ) { echo $thumb; } ?>">
+        <!-- Fin compartir Twitter -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url')?>/img/icono/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="<?php bloginfo('template_url')?>/img/icono/favicon-16x16.png" sizes="16x16">
