@@ -3,9 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title><?php bloginfo(' name'); wp_title('|',true,RIGHT); ?></title>
-        <meta name="description" content="Asesorar en la Venta de vehiculos Nuevos y Usados todas las marcas, Financiamiento por medio de Banco servicio responsable agil honestidad.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <?php if(is_single() || is_page()) { ?>
+          <title><?php bloginfo(' name'); wp_title('|',true,RIGHT); ?></title>
+          <meta name="description" content="<?php 
+            while(have_posts()):the_post();
+            $out_excerpt = str_replace(array("\r\n", "\r", "\n"), "", get_the_excerpt());
+            echo apply_filters('the_excerpt_rss', $out_excerpt);
+            endwhile;   ?>">
+        <?php  } else { ?>
+          <title><?php bloginfo(' name'); wp_title('|',true,RIGHT); ?></title>
+          <meta name="description" content="Asesorar en la Venta de vehiculos Nuevos y Usados todas las marcas, Financiamiento por medio de Banco servicio responsable agil honestidad.">
+        <?php  }  ?>
         <meta name="author" content="Alvaro Serrano">
         <meta name="generator" content="Wordpress">
         <meta name="robots" content="index, follow">
@@ -14,6 +23,7 @@
           $thumb = get_post_meta($post->ID,'_thumbnail_id',false);
           $thumb = wp_get_attachment_image_src($thumb[0], false);
           $thumb = $thumb[0];
+          $default_img = get_bloginfo('stylesheet_directory').'/img/asesorvncucuta.png';
          
           ?>         
         <?php if(is_single() || is_page()) { ?>
@@ -31,7 +41,7 @@
            <meta property="og:title" content="<?php bloginfo('name'); ?>" />
           <meta property="og:url" content="<?php bloginfo('url'); ?>"/>
           <meta property="og:description" content="<?php bloginfo('description'); ?>" />
-            <meta property="og:image" content="<?php  if ( $thumb[0] !== null ) { echo $thumb;  } ?>" />
+          <meta property="og:image" content="<?php  if ( $thumb[0] !== null ) { echo $default_img;  } ?>" />
         <?php  }  ?>
         <!-- Fin compartir en FB -->
         <!-- Compartir Twitter -->
@@ -52,7 +62,7 @@
         <meta name="twitter:creator" content="@Jandrey15"/>
         <meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
         <meta name="twitter:description"content="<?php bloginfo('description'); ?>" />
-        <meta name="twitter:image:src" content="<?php  if ( $thumb[0] !== null ) { echo $thumb;  } ?>" />
+        <meta name="twitter:image:src" content="<?php  if ( $thumb[0] !== null ) { echo $default_img; } ?>" />
         <?php  }  ?>
         <!-- Fin compartir Twitter -->
         <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url')?>/img/icono/apple-touch-icon.png">
