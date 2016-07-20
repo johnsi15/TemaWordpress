@@ -36,8 +36,8 @@
 					</section>
 					<section class="articulos container-fluid">
 						<article class="articulos_principales">
-							<?php $b=0; query_posts("paged=$paged");	?>
-							<?php if(have_posts()): query_posts('cat=-10'); while (have_posts()): the_post(); ?>
+							<?php query_posts('showposts=1, cat=-10');	?>
+							<?php if(have_posts()): while (have_posts()): the_post(); ?>
 								<?php 
 								$a++;
 								if($a==1){
@@ -45,7 +45,6 @@
 									<article class="row">
 								<?php
 								}
-								  if($b<=1){
 								  	?>
 									<div class="col-xs-12 col-sm-6 col-md-4">
 					                    <div class="mini-portada">
@@ -59,9 +58,7 @@
 					                        <div class="espacio_articulo"><strong class="fecha"><?php print get_the_date();?> - <span class="categorias"><?php the_category();?></span></strong></div>
 					                    </div>
 					                </div>
-									<?php
-									$b++;
-								  } 	
+									<?php	
 								?>
 								<?php 
 									if($a>=2){ 
