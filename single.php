@@ -36,7 +36,7 @@
 					</section>
 					<section class="articulos container-fluid">
 						<article class="articulos_principales">
-							<?php query_posts('showposts=1, cat=-10');	?>
+							<?php query_posts('showposts=2, cat=-10');	?>
 							<?php if(have_posts()): while (have_posts()): the_post(); ?>
 								<?php 
 								$a++;
