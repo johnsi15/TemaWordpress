@@ -36,7 +36,7 @@
 					</section>
 					<section class="articulos container-fluid">
 						<article class="articulos_principales">
-							<?php $b=0; query_posts("showposts=2");	?>
+							<?php $b=0; query_posts("paged=$paged");	?>
 							<?php if(have_posts()): query_posts('cat=-10'); while (have_posts()): the_post(); ?>
 								<?php 
 								$a++;
@@ -45,6 +45,7 @@
 									<article class="row">
 								<?php
 								}
+								  if($b<=1){
 								  	?>
 									<div class="col-xs-12 col-sm-6 col-md-4">
 					                    <div class="mini-portada">
@@ -59,6 +60,7 @@
 					                    </div>
 					                </div>
 									<?php
+									$b++;
 								  } 	
 								?>
 								<?php 
