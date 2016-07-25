@@ -22,7 +22,7 @@
                     </div>
                 </article>
                 <article class="row">
-                  <div class="col-xs-6 col-sm-6 col-md-6">
+                  <div class="col-xs-12 col-sm-6 col-md-6">
                        <span class="redes_sociales"> Cel: 3003482805</span>
                   </div>
                 </article>
@@ -97,6 +97,8 @@
         interval: 10000
     });
     </script>
+    
+    <script src='https://www.google.com/recaptcha/api.js'></script>
    
     <!-- Comentarios de facebook-->
       <div id="fb-root"></div>

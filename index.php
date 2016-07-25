@@ -5,7 +5,7 @@
 	</header>
         <?php get_sidebar(); ?>
 
-        <section class="container-fluid articulos">            
+        <section class="container-fluid articulos" style="margin-left: 5%!important;">            
             <?php query_posts("paged=$paged");  ?> <!-- Este codigo se usa para la paginacion-->
             <?php $a = 0; if(have_posts()): query_posts($query_string .'&cat=-10'); while (have_posts()): the_post(); ?>
                 <?php 
@@ -19,8 +19,8 @@
                     ?>
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="mini-portada">
-                        <a href="<?php the_permalink();?>">
-                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'img_thumbnail img-thumbnail' ); } ?>
+                        <a href="<?php the_permalink();?>" title="<?php the_title_attribute(); ?>">
+                            <?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'thumbnail' , array( 'class' => 'img_thumbnail img-thumbnail' ) ); } ?>
                         </a>
                     </div>
                     <div class="articulo">
