@@ -74,7 +74,7 @@
 
         <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/normalize.min.css">
         <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/main.min.css">
-        <!-- <link rel="stylesheet" href="<?php bloginfo('template_url')?>/css/main.css"> -->
+        <!-- <link rel="stylesheet" href="<?php //bloginfo('template_url')?>/css/main.css"> -->
         <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
 <!-- <link href='https://fonts.googleapis.com/css?family=Passion+One|Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
