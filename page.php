@@ -33,17 +33,17 @@
 <?php get_footer(); ?>
 
 <script>
-	$('#enviar').click(function(e){
-		e.preventDefault();
-		var url = "/mailgun.php";
-		 $.ajax({
-	           type: "POST",
-	           url: url,
-	           data: $("#formulario").serialize(), // Adjuntar los campos del formulario enviado.
-	           success: function(data){
-	           		$('#formulario')[0].reset();
-	               $("#respuesta").html(data); // Mostrar la respuestas del script PHP.
-	           }
-	         });
-	});
+	// $('#enviar').click(function(e){
+	// 	e.preventDefault();
+	// 	var url = "/mailgun.php";
+	// 	 $.ajax({
+	//            type: "POST",
+	//            url: url,
+	//            data: $("#formulario").serialize(), // Adjuntar los campos del formulario enviado.
+	//            success: function(data){
+	//            		$('#formulario')[0].reset();
+	//                $("#respuesta").html(data); // Mostrar la respuestas del script PHP.
+	//            }
+	//          });
+	// });
 </script>
