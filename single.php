@@ -56,6 +56,20 @@
 					<?php endwhile; else: ?>
 						<h1>No hay articulos.</h1>
 					<?php endif; ?>
+					<article class="row">
+						<div class="col-md-12">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- Anuncios_1 -->
+							<ins class="adsbygoogle"
+							     style="display:block"
+							     data-ad-client="ca-pub-3083367533294626"
+							     data-ad-slot="9717777394"
+							     data-ad-format="auto"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</article>
 				</div>
 			</section>
 		</section>
