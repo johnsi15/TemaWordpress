@@ -37,7 +37,7 @@ Template Name: contacto
 							   <div class="form-group">
 							    <div class="col-sm-10">      
 							    <label for="correo" class="col-sm-2 control-label">Teléfono</label>
-							      <input type="email" class="form-control" id="tel" name="tel" required>
+							      <input type="text" class="form-control" id="tel" name="tel" required>
 							     
 							    </div>
 							  </div>
