@@ -18,6 +18,7 @@
         <meta name="author" content="Alvaro Serrano">
         <meta name="generator" content="Wordpress">
         <meta name="robots" content="index, follow">
+        <!-- <meta name="robots" content="NoIndex, follow"> -->
         <!-- Inicio compartir en FB  -->
         <?php
           $thumb = get_post_meta($post->ID,'_thumbnail_id',false);
