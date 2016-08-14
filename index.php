@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-    <header>
-		<?php include (TEMPLATEPATH. '/slideshow.php'); ?>
-	</header>
+    
         <?php get_sidebar(); ?>
 
-        <section class="container-fluid articulos" style="margin-left: 5%!important;">            
+        <section class="container-fluid articulos">            
+            <header class="container-fluid" style="padding: 0; margin-top: 70px;">
+                <?php include (TEMPLATEPATH. '/slideshow.php'); ?>
+            </header>
             <?php query_posts("paged=$paged");  ?> <!-- Este codigo se usa para la paginacion-->
             <?php $a = 0; if(have_posts()): query_posts($query_string .'&cat=-10'); while (have_posts()): the_post(); ?>
                 <?php 
@@ -40,6 +41,7 @@
             <?php endwhile; else: ?>
                 <h1>No hay articulos.</h1>
             <?php endif; ?>
+            <iframe class="desktop" src="//rcm-eu.amazon-adsystem.com/e/cm?t=asesorvncucut-21&o=30&p=48&l=ur1&category=electronica&banner=1ZFFFVGD3JXYV7FSVA02&f=ifr" width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>
         </section>
 
         <section class="paginacion">

@@ -58,11 +58,6 @@
 					<?php endif; ?>
 					<article class="row">
 						<div class="col-md-12">
-							<iframe src="//rcm-eu.amazon-adsystem.com/e/cm?t=asesorvncucut-21&o=30&p=12&l=ur1&category=todoslosproductos&banner=08B36QSC3KJB4QCVAWR2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>
-						</div>
-					</article>
-					<article class="row">
-						<div class="col-md-12">
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<!-- Anuncios_1 -->
 							<ins class="adsbygoogle"
@@ -103,6 +98,25 @@
 					<?php endwhile; else: ?>
 						<h1>No hay Vehículos.</h1>
 					<?php endif; ?>
+				</article>
+				<article class="row">
+					<div class="desktop col-md-12">
+						<iframe src="//rcm-eu.amazon-adsystem.com/e/cm?t=asesorvncucut-21&o=30&p=12&l=ur1&category=todoslosproductos&banner=08B36QSC3KJB4QCVAWR2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;max-width:800px;max-height:600px;" frameborder="0"></iframe>
+					</div>
+				</article>
+				<article class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12" style="padding: 0;margin-top: 10px;">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- Anuncios_1 -->
+							<ins class="adsbygoogle"
+							     style="display:block"
+							     data-ad-client="ca-pub-3083367533294626"
+							     data-ad-slot="9717777394"
+							     data-ad-format="auto"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
 				</article>
 			</section>
 		</section>

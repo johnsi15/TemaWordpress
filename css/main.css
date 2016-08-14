@@ -90,8 +90,8 @@ img#wpstats {
 }
 
 .articulos {
-    margin-top: 50px;
-    margin-left: 0%!important;
+    margin-top: 0;
+    margin-left: 5%!important;
     overflow: hidden
 }
 
@@ -160,7 +160,7 @@ footer {
     float: right;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 20px;
+    margin-top: 70px;
     width: 25%
 }
 
@@ -224,23 +224,11 @@ footer {
 }
 
 .lista_catego li > ul{
-	display: flex;	
-	display: -webkit-flex;
-	display: -moz-flex;
-    flex-flow: column;    
-    -webkit-flex-flow: column;
-    -moz-flex-flow: column;
-    justify-content: flex-start;    
-    -webkit-justify-content: flex-start;
-    -moz-justify-content: flex-start;
-    align-items: flex-start;
-    -webkit-align-items: flex-start;
-    -moz-align-items: flex-start;
+	display: none;
 }
 
-.lista_catego li ul > li{
-	margin: 0;
-}
+
+
 
 /*.articulos_archive{
 	width: 37%;
@@ -263,6 +251,13 @@ footer {
     }
     .buscador {
         margin-top: 80px
+    }
+
+    .desktop{
+        display: none;
+    }
+    .articulos{
+        margin-left: 0!important;
     }
 }
 
