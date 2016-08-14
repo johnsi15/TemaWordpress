@@ -214,12 +214,10 @@ footer {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     margin-right: 20px;
-    height: 152px;
     overflow: hidden;
 }
 
 .lista_catego li{
-    height: 175px;
     overflow: hidden;
 }
 
