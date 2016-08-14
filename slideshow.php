@@ -1,4 +1,4 @@
-        <section id="slides">
+        <section  class="col-md-12" id="slides"  style="padding: 0">
                             <!-- data-interval="false" pausar el carousel-->
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
